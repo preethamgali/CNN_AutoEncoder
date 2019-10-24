@@ -116,4 +116,4 @@ with tf.Session() as sess:
     print(e,"-epoch ",sum(errors)/len(errors),"Error for testing data")
       
    out = sess.run(output,{input_img:[X_train[np.random.randint(1000)]]})
-   plt.imshow(out[:,:,0], cmap='gray')
+   plt.imshow(out[0][:,:,0], cmap='gray')
